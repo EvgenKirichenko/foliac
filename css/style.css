@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+@font-face {
+    font-family: 'Big Jon';
+    src: url('../fonts/bigjohn-webfont.woff2') format('woff2'),
+         url('../fonts/bigjohn-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'Slim';
+    src: url('../fonts/slimjoe-webfont.woff2') format('woff2'),
+         url('../fonts/slimjoe-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body{
+	font: 400 16px/1.56 Lato, sans-serif;
+	color: #334755;
+	background: #fff;
+}
+
+/* Layout */
+.ba-container{
+	padding-left: 20px;
+	padding-right: 20px;
+	max-width: 1180px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+	border-radius: 3px;
+	height: 39px;
+	border: 2px solid  #48bf72;
+	font: 700 14px/39px Lato, sans-serif;
+	padding: 0 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	color: #48bf72;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+	background-color: #48bf72;
+	color: #334755;
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+.ba-intro{
+	background: #334755 url("../img/computer.jpg") no-repeat 50%;
+	color: #fff;
+	background-size: cover;
+	padding: 36px 0 180px;
+
+}
+
+.ba-header{
+	display: flex;
+	align-items: center;
+
+}
+
+.ba-nav{
+	flex-grow: 1;
+
+}
+.ba-menu{
+	display: flex;
+	justify-content: flex-end;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.ba-menu a{
+	font: 700 16px/1 Lato, sans-serif;
+	color: #ffffff;
+	text-decoration: none;
+}
+.ba-menu a{
+	margin: 0 50px;
+
+}
+.ba-menu li:last-child a{
+	margin-right: 0;
+}
+
+.ba-menu li:first-child a{
+	margin-left: 0;
+}
+.ba-menu li:not(:first-child):before{
+	content: "";
+	display: inline-block;
+	width: 1px;
+	height: 18px;
+	background: rgba(255, 255, 255, .3);
+	transform: skew(-10deg);
+}
+.ba-intro-content{
+	text-align: center;
+	padding-top: 140px;
+}
+.ba-page-tittle{
+	font: 400 46px/1.2 "Big Jon", sans-serif;
+	margin: 0;
+}
+.ba-page-subtittle{
+	font: 400 30px/1.2 "Slim", sans-serif;
+	margin: 0 0 40px;
+}
+.ba-menu a:hover{
+	color: #48bf72;
+}
