@@ -145,3 +145,44 @@ textarea {
 .ba-menu a:hover{
 	color: #48bf72;
 }
+.ba-portfolio{
+	padding: 51px 0 89px;
+}
+.ba-work{
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	display: block;
+	float: left;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.ba-work img{
+	display: block;
+}
+.ba-work-description{
+	background: rgba(72, 191, 114, 0.80);
+	padding: 10px;
+	text-align: center;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	opacity: 0;
+	transition: opacity 0.4s;
+}
+.ba-work:hover .ba-work-description{
+	opacity: 1;
+}
+.ba-work-tittle{
+	margin: 0;
+}
+.ba-work-description p{
+	margin: 0
+}
