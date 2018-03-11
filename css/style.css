@@ -153,12 +153,12 @@ textarea {
 	text-decoration: none;
 	position: relative;
 	display: block;
-	float: left;
 	border-radius: 8px;
 	overflow: hidden;
 }
 .ba-work img{
 	display: block;
+	width: 100%;
 }
 .ba-work-description{
 	background: rgba(72, 191, 114, 0.80);
@@ -185,4 +185,20 @@ textarea {
 }
 .ba-work-description p{
 	margin: 0
+}
+.ba-row {
+	margin-left: -40px;
+}
+.ba-col-40{
+	float: left;
+	width: 41.5%;
+	padding-left: 40px;
+}
+.ba-col-60{
+	float: left;
+	width: 58.5%;
+	padding-left: 40px;
+}
+.ba-work + .ba-work {
+	margin-top: 40px;
 }
